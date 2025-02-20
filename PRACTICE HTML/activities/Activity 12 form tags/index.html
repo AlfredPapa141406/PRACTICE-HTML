@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tags</title>
+</head>
+<body>
+    
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+        <label for="username"> username </label>
+        <input type="text" id="username" placeholder="Alfred" minlength="6" maxlength="12" required><br>
+
+        <label for="password"> password </label>
+        <input type="password" id="password" placeholder="1234567" minlength="6" maxlength="12" required><br>
+ 
+        <label for="email"> email </label>
+        <input type="email" id="email" placeholder="alfredpapa141406@gmail.com"><br>
+
+        <label for="phone"> Phone </label>
+        <input type="tel" id="phone" placeholder="09000000003"><br>
+
+        <label for="bday"> Birthday </label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity"> Quantity </label>
+        <input type="number" id="quantity" min="1" max="99" value="1"><br>
+
+        <label for="title"> title: </label>
+        <label for="Mr."> Mr. </label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms."> Ms. </label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Mrs."> Mrs. </label>
+        <input type="radio" id="Mrs." value="Mrs."name="title"><br>
+
+        <!--Drop Down Menu-->
+        <label for="Payment"> Payment </label>
+        <select id="Payment">
+            <option> VISA </option>
+            <option> MASTERCARD </option>
+            <option> Gcash </option>
+        </select><br> 
+
+
+        <!--Check box-->
+        <label for="subscribe"> subscribe </label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment"> Comment </label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+
+        <label for="file"> file: </label>
+        <input type="file" id="file" accept="img/png, image/jpeg"><br>
+
+
+
+
+        <br>
+        <input type="reset">
+        <input type="submit"><br>
+
+    </form>
+
+
+</body>
+
+
+</html>
