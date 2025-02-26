@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e9d8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-image: url('images/bg1.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Instruction Box */
+.instruction-box {
+    background-image: url('images/bg1.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Gods Section - Unified Styling */
+.gods-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Adjusted gap */
+    padding: 30px;
+    background-color: white; /* Unifies all gods in one section */
+    border-radius: 15px; /* Smooth corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1100px;
+    margin: 20px auto; /* Centering with extra margin */
+}
+
+/* God Box */
+.god {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-radius: 12px; /* Rounded corners */
+}
+
+/* Images */
+.god img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Button */
+.toggle-btn {
+    background-color: #5a3e2b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #422d1c;
+}
+
+/* Extra Text */
+.extra-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gods-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 10px;
+        padding: 20px;
+    }
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    width: 100%; /* Adjust to fit the modal */
+    max-width: 500px; /* Set a uniform max width */
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image is properly cropped */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
